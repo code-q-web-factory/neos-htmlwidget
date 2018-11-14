@@ -1,0 +1,34 @@
+'CodeQ.HtmlWidget:Content.HtmlWidget':
+  label: '${"Widget " + String.cropAtWord(q(q(node).property("reference")).property("title"), 90, "...")}'
+  superTypes:
+    'Neos.Neos:Content': true
+    'CodeQ.HtmlWidget:Mixin.Inspector': true
+  ui:
+    label: i18n
+    icon: 'icon-gem'
+    position: 950
+    creationDialog:
+      elements:
+        reference:
+          type: reference
+          ui:
+            label: i18n
+            editor: 'Neos.Neos/Inspector/Editors/ReferenceEditor'
+            editorOptions:
+              nodeTypes: ['CodeQ.HtmlWidget:Content.HtmlWidgetDefinition']
+          validation:
+            'Neos.Neos/Validation/NotEmptyValidator': []
+  options:
+    template:
+      properties:
+        reference: '${data.reference}'
+  properties:
+    reference:
+      type: reference
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: htmlwidget
+          editorOptions:
+            nodeTypes: ['CodeQ.HtmlWidget:Content.HtmlWidgetDefinition']

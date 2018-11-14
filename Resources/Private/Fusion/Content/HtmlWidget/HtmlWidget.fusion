@@ -1,0 +1,22 @@
+prototype(CodeQ.HtmlWidget:Content.HtmlWidget) < prototype(Neos.Neos:ContentComponent) {
+	@context.reference = ${q(node).property('reference')}
+
+	renderer = Neos.Fusion:Case {
+		hasReference {
+			condition = ${reference ? true : false}
+			renderer = CodeQ.HtmlWidget:Content.HtmlWidgetRenderer {
+				html = ${q(reference).property('html')}
+				css = ${q(reference).property('css')}
+				js = ${q(reference).property('js')}
+				renderJavaScript = ${!node.context.inBackend}
+			}
+		}
+		isEmtpy {
+			condition = ${true}
+			renderer = afx`
+				<div style="display: block; padding: 1rem; background: red;">
+					{I18n.translate('CodeQ.HtmlWidget:NodeTypes.Content.HtmlWidget:emptyText')}
+				</div>
+			`
+		}
+}

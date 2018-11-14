@@ -1,0 +1,9 @@
+# privilegeTargets:
+#   # TODO
+
+# roles:
+#   'Neos.Neos:Administrator':
+#     privileges:
+#       -
+#         privilegeTarget: 'CodeQ.HtmlWidget:WidgetDefinition'
+#         permission: GRANT

@@ -1,0 +1,14 @@
+{
+    "name": "codeq/htmlwidget",
+    "description": "HTML Widget for the Neos CMS",
+    "type": "neos-package",
+    "require": {
+        "neos/neos": "~4.0 || dev-master",
+        "flowpack/nodetemplates": "~1.0 || dev-master"
+    },
+    "extra": {
+        "neos": {
+            "package-key": "CodeQ.HtmlWidget"
+        }
+    }
+}

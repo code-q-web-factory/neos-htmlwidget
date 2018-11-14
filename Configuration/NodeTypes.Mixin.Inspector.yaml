@@ -1,0 +1,9 @@
+'CodeQ.HtmlWidget:Mixin.Inspector':
+  abstract: true
+  ui:
+    inspector:
+      groups:
+        htmlwidget:
+          label: i18n
+          icon: 'icon-cogs'
+          position: 10

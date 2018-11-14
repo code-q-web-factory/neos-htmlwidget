@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" source-language="en" datatype="plaintext">
+        <body>
+            <trans-unit id="ui.label" xml:space="preserve">
+                <source>HTML Widget Definition</source>
+            </trans-unit>
+            <trans-unit id="creationDialog.title" xml:space="preserve">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="properties.title" xml:space="preserve">
+                <source>Widget name</source>
+            </trans-unit>
+            <trans-unit id="properties.html" xml:space="preserve">
+                <source>HTML Content</source>
+            </trans-unit>
+            <trans-unit id="properties.html.codeEditor.buttonLabel" xml:space="preserve">
+                <source>Edit HTML source</source>
+            </trans-unit>
+            <trans-unit id="properties.css" xml:space="preserve">
+                <source>CSS styles</source>
+            </trans-unit>
+            <trans-unit id="properties.csss.codeEditor.buttonLabel" xml:space="preserve">
+                <source>Edit CSS styles</source>
+            </trans-unit>
+            <trans-unit id="properties.js" xml:space="preserve">
+                <source>JavaScript</source>
+            </trans-unit>
+            <trans-unit id="properties.js.codeEditor.buttonLabel" xml:space="preserve">
+                <source>Edit JavaScript</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

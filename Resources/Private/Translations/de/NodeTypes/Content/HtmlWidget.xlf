@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" source-language="en" datatype="plaintext" target-language="de">
+        <body>
+            <trans-unit id="ui.label" xml:space="preserve">
+                <source>HTML Widget</source>
+                <target xml:lang="de" state="translated">HTML-Widget</target>
+            </trans-unit>
+            <trans-unit id="creationDialog.reference" xml:space="preserve">
+                <source>Select widget</source>
+                <target xml:lang="de" state="translated">Widget auswählen</target>
+            </trans-unit>
+            <trans-unit id="properties.reference" xml:space="preserve">
+                <source>Show widget</source>
+                <target xml:lang="de" state="translated">Angezeigtes Widget</target>
+            </trans-unit>
+            <trans-unit id="emptyText" xml:space="preserve">
+                <source>Please select a HTML widget definition in the inspector on the right.</source>
+                <target xml:lang="de" state="translated">Bitte wählen Sie auf der rechten Seite im Inspektor eine anzuzeigende Widget-Definition aus.</target>
+            </trans-unit>
+        </body>
+ </file>
+</xliff>

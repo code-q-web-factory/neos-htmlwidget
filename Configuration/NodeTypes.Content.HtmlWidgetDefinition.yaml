@@ -1,0 +1,66 @@
+'CodeQ.HtmlWidget:Content.HtmlWidgetDefinition':
+  superTypes:
+    'Neos.Neos:Content': true
+    'CodeQ.HtmlWidget:Mixin.Inspector': true
+  ui:
+    label: i18n
+    icon: 'icon-code'
+    position: 900
+    creationDialog:
+      elements:
+        title:
+          type: string
+          ui:
+            label: i18n
+            editor: 'Neos.Neos/Inspector/Editors/TextFieldEditor'
+          validation:
+            'Neos.Neos/Validation/NotEmptyValidator': []
+  options:
+    template:
+      properties:
+        title: '${data.title}'
+        html: '${"<div class=\"html-widget-sample\" style=\"background: orange;\"><h2>" + data.title + "</h2><p>Enter HTML here</p></div>"}'
+  properties:
+    title:
+      type: string
+      ui:
+        label: i18n
+        inspector:
+          group: 'htmlwidget'
+      validation:
+        'Neos.Neos/Validation/NotEmptyValidator': []
+    html:
+      type: string
+      defaultValue: '<p class="html-widget-sample" style="background: orange;">Enter HTML here</p>'
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: 'htmlwidget'
+          editor: 'Neos.Neos/Inspector/Editors/CodeEditor'
+          editorOptions:
+            buttonLabel: i18n
+            highlightingMode: 'text/html'
+    css:
+      type: string
+      defaultValue: '.html-widget-sample { margin: 1rem 0; padding: 1rem;}'
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: 'htmlwidget'
+          editor: 'Neos.Neos/Inspector/Editors/CodeEditor'
+          editorOptions:
+            buttonLabel: i18n
+            highlightingMode: 'text/css'
+    js:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: 'htmlwidget'
+          editor: 'Neos.Neos/Inspector/Editors/CodeEditor'
+          editorOptions:
+            buttonLabel: i18n
+            highlightingMode: 'text/javascript'

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" source-language="en" datatype="plaintext">
+        <body>
+            <trans-unit id="groups.htmlwidget" xml:space="preserve">
+                <source>Settings</source>
+                <target xml:lang="de" state="translated">Einstellungen</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

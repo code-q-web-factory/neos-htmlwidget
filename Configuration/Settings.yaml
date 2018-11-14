@@ -1,0 +1,13 @@
+
+Neos:
+  Neos:
+    fusion:
+      autoInclude:
+        CodeQ.HtmlWidget: true
+    userInterface:
+      translation:
+        autoInclude:
+          CodeQ.HtmlWidget:
+            - 'Fusion/*'
+            - 'NodeTypes/*'
+

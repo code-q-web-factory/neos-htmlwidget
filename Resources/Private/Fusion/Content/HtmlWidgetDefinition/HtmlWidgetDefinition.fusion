@@ -1,0 +1,8 @@
+prototype(CodeQ.HtmlWidget:Content.HtmlWidgetDefinition) < prototype(Neos.Neos:ContentComponent) {
+	renderer = CodeQ.HtmlWidget:Content.HtmlWidgetRenderer {
+		html = ${q(node).property('html')}
+		css = ${q(node).property('css')}
+		js = ${q(node).property('js')}
+		renderJavaScript = ${!node.context.inBackend}
+	}
+}

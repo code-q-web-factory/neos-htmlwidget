@@ -1,0 +1,26 @@
+prototype(CodeQ.HtmlWidget:Content.HtmlWidgetRenderer) < prototype(Neos.Fusion:Component) {
+	# api
+	html = ''
+	css = ''
+	js = ''
+	renderJavaScript = true
+
+	# rendering
+	sanitizedHtml = ${this.html}
+	sanitizedHtml.@process.removeUnwantedScripts = ${this.renderJavaScript ? value : String.pregReplace(value, '/<script[\s\S]*?>[\s\S]*?<\/script>/i', '')}
+	sanitizedCss = ${String.trim(this.css)}
+	sanitizedJavaScript = ${String.trim(this.js)}
+	showJavaScriptRemovaleNotice = ${!this.renderJavaScript && (this.sanitizedJavaScript || String.pregMatch(this.html, '/<script[\s\S]*?>[\s\S]*?<\/script>/i'))}
+	javaScriptRemovaleNoticeText = ${I18n.translate('CodeQ.HtmlWidget:Fusion.Component.HtmlWidgetRenderer:javaScriptRemovaleNotice')}
+
+	renderer = afx`
+		<div class="code-q-html-widget">
+			<style @if.has={props.css}>{props.sanitizedCss}</style>
+			{props.sanitizedHtml}
+			<script @if.has={props.renderJavaScript && props.sanitizedJavaScript}>{props.sanitizedJavaScript}</script>
+			<div @if.show={props.showJavaScriptRemovaleNotice} style="display: block; padding: 1rem; background: orange;">
+				{props.javaScriptRemovaleNoticeText}
+			</div>
+		</div>
+	`
+}

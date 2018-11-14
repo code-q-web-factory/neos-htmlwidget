@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" source-language="en" datatype="plaintext" target-language="de">
+        <body>
+            <trans-unit id="ui.label" xml:space="preserve">
+                <source>HTML Widget Definition</source>
+                <target xml:lang="de" state="translated">HTML-Widget Definition</target>
+            </trans-unit>
+            <trans-unit id="creationDialog.title" xml:space="preserve">
+                <source>Name</source>
+                <target xml:lang="de" state="translated">Name</target>
+            </trans-unit>
+            <trans-unit id="properties.title" xml:space="preserve">
+                <source>Widget name</source>
+                <target xml:lang="de" state="translated">Widget Name</target>
+            </trans-unit>
+            <trans-unit id="properties.html" xml:space="preserve">
+                <source>HTML Content</source>
+                <target xml:lang="de" state="translated">HTML-Quellcode</target>
+            </trans-unit>
+            <trans-unit id="properties.html.codeEditor.buttonLabel" xml:space="preserve">
+                <source>Edit HTML source</source>
+                <target xml:lang="de" state="translated">HTML-Quellcode bearbeiten</target>
+            </trans-unit>
+            <trans-unit id="properties.css" xml:space="preserve">
+                <source>CSS styles</source>
+                <target xml:lang="de" state="translated">CSS Styles</target>
+            </trans-unit>
+            <trans-unit id="properties.csss.codeEditor.buttonLabel" xml:space="preserve">
+                <source>Edit CSS styles</source>
+                <target xml:lang="de" state="translated">CSS bearbeiten</target>
+            </trans-unit>
+            <trans-unit id="properties.js" xml:space="preserve">
+                <source>JavaScript</source>
+                <target xml:lang="de" state="translated">JavaScript</target>
+            </trans-unit>
+            <trans-unit id="properties.js.codeEditor.buttonLabel" xml:space="preserve">
+                <source>Edit JavaScript</source>
+                <target xml:lang="de" state="translated">JavaScript bearbeiten</target>
+            </trans-unit>
+        </body>
+ </file>
+</xliff>
