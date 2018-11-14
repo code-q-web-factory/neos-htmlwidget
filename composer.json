@@ -2,9 +2,28 @@
     "name": "codeq/htmlwidget",
     "description": "HTML Widget for the Neos CMS",
     "type": "neos-package",
+    "license": "MIT",
+    "keywords": ["flow", "neos", "fusion", "html"],
     "require": {
         "neos/neos": "~4.0 || dev-master",
+        "neos/fusion-afx": "^1.0 || dev-master",
         "flowpack/nodetemplates": "~1.0 || dev-master"
+    },
+    "authors": [
+        {
+            "name": "Roland Schütz",
+            "email": "rs@codeq.at",
+            "homepage": "https://codeq.at",
+            "role": "Developer"
+        }
+    ],
+    "archive": {
+        "exclude": [
+            ".editorconfig",
+            ".gitattributes",
+            ".github",
+            ".gitignore"
+        ]
     },
     "extra": {
         "neos": {
