@@ -12,7 +12,7 @@ prototype(CodeQ.HtmlWidget:Content.HtmlWidget) < prototype(Neos.Neos:ContentComp
 			}
 		}
 		isEmtpy {
-			condition = ${true}
+			condition = ${node.context.inBackend}
 			renderer = afx`
 				<div style="display: block; padding: 1rem; background: red;">
 					{I18n.translate('CodeQ.HtmlWidget:NodeTypes.Content.HtmlWidget:emptyText')}
