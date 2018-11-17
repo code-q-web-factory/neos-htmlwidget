@@ -2,7 +2,7 @@
 privilegeTargets:
   'Neos\ContentRepository\Security\Authorization\Privilege\Node\CreateNodePrivilege':
     'CodeQ.HtmlWidget:CreateWidgetDefinition':
-      matcher: 'nodeIsOfType("CodeQ.HtmlWidget:Content.HtmlWidgetDefinition")'
+      matcher: 'createdNodeIsOfType("CodeQ.HtmlWidget:Content.HtmlWidgetDefinition")'
   'Neos\ContentRepository\Security\Authorization\Privilege\Node\EditNodePrivilege':
     'CodeQ.HtmlWidget:EditWidgetDefinition':
       matcher: 'nodeIsOfType("CodeQ.HtmlWidget:Content.HtmlWidgetDefinition")'
