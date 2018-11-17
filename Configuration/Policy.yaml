@@ -1,9 +1,18 @@
-# privilegeTargets:
-#   # TODO
+# restrict creation and editing of `CodeQ.HtmlWidget:Content.HtmlWidgetDefinition` nodetype to non-admins
+privilegeTargets:
+  'Neos\ContentRepository\Security\Authorization\Privilege\Node\CreateNodePrivilege':
+    'CodeQ.HtmlWidget:CreateWidgetDefinition':
+      matcher: 'nodeIsOfType("CodeQ.HtmlWidget:Content.HtmlWidgetDefinition")'
+  'Neos\ContentRepository\Security\Authorization\Privilege\Node\EditNodePrivilege':
+    'CodeQ.HtmlWidget:EditWidgetDefinition':
+      matcher: 'nodeIsOfType("CodeQ.HtmlWidget:Content.HtmlWidgetDefinition")'
 
-# roles:
-#   'Neos.Neos:Administrator':
-#     privileges:
-#       -
-#         privilegeTarget: 'CodeQ.HtmlWidget:WidgetDefinition'
-#         permission: GRANT
+roles:
+  'Neos.Neos:Administrator':
+    privileges:
+      -
+        privilegeTarget: 'CodeQ.HtmlWidget:CreateWidgetDefinition'
+        permission: GRANT
+      -
+        privilegeTarget: 'CodeQ.HtmlWidget:EditWidgetDefinition'
+        permission: GRANT
