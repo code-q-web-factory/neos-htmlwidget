@@ -5,9 +5,9 @@
 
 This package allows Administrators to create resuable html widgets, which then can be included by all editors on the website.
 
-Administrators and everyone with the privilegde `CodeQ.HtmlWidget:CreateWidgetDefinition` and `CodeQ.HtmlWidget:EditWidgetDefinition` can create HTML Widget Definitions, including HTML, CSS and JavaScript. We recommend to create a separate, hidden Widget Definiton page for that.
+Administrators and everyone with the privilegde `CodeQ.HtmlWidget:CreateWidgetDefinition` and `CodeQ.HtmlWidget:EditWidgetDefinition` can create HTML Widget Definitions including HTML, CSS and JavaScript. We recommend to create a separate, hidden Widget Definiton page for that.
 
-All editors can add those HTML Widgets as content, similar to normal node types withotu beeing able to change the content.
+All editors can add those HTML Widgets as content, similar to normal node types, without being able to change the content.
 
 ## Features
 
