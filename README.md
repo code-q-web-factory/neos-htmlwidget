@@ -12,7 +12,7 @@ All editors can add those HTML Widgets as content.
 *   Automatically blocks JavaScript code in the backend
 *   Restricts editing of HTML widget definitions, while allowing editors to use those widgets
 
-![HTML Widget Demo](https://img.youtube.com/vi/pOhYHlYH_6Q/0.jpg)](https://www.youtube.com/watch?v=pOhYHlYH_6Q)
+![[HTML Widget Demo](https://img.youtube.com/vi/pOhYHlYH_6Q/0.jpg)](https://www.youtube.com/watch?v=pOhYHlYH_6Q)
 
 *The development and the public-releases of this package is generously sponsored [Code Q Web Factory](http://codeq.at).*
 
