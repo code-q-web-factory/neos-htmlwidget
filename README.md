@@ -3,9 +3,11 @@
 
 # HTML Widget for Neos CMS
 
-Administrators and everyone with the privilegde `CodeQ.HtmlWidget:WidgetDefinition` can create HTML Widget Definitions, including HTML, CSS and JavaScript. We recommend to create a separate, hidden Widget Definiton page for that.
+This package allows to create resuable html widgets, which then can be included anywhere on the website.
 
-All editors can add those HTML Widgets as content.
+Administrators and everyone with the privilegde `CodeQ.HtmlWidget:CreateWidgetDefinition` and `CodeQ.HtmlWidget:EditWidgetDefinition` can create HTML Widget Definitions, including HTML, CSS and JavaScript. We recommend to create a separate, hidden Widget Definiton page for that.
+
+All editors can add those HTML Widgets as content, similar to normal node types withotu beeing able to change the content.
 
 ## Features
 
