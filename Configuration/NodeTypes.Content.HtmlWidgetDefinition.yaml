@@ -70,6 +70,6 @@
         label: 'Assets used'
         help:
           message: 'If you are use dynamic assets in your HTML, you can prevent those assets from being deleted by linking them here. This will have no effect on the widget itself, the references here are never actually used.'
-        reloadIfChanged: true
+        reloadIfChanged: false
         inspector:
           group: 'htmlwidget'
