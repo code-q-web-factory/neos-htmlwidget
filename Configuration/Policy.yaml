@@ -6,6 +6,12 @@ privilegeTargets:
   'Neos\ContentRepository\Security\Authorization\Privilege\Node\EditNodePrivilege':
     'CodeQ.HtmlWidget:EditWidgetDefinition':
       matcher: 'nodeIsOfType("CodeQ.HtmlWidget:Content.HtmlWidgetDefinition")'
+  'Neos\ContentRepository\Security\Authorization\Privilege\Node\RemoveNodePrivilege':
+    'CodeQ.HtmlWidget:RemoveWidgetDefinition':
+      matcher: 'nodeIsOfType("CodeQ.HtmlWidget:Content.HtmlWidgetDefinition")'
+  'Neos\ContentRepository\Security\Authorization\Privilege\Node\EditNodePropertyPrivilege':
+    'CodeQ.HtmlWidget:EditWidgetDefinitionProperty':
+      matcher: 'nodeIsOfType("CodeQ.HtmlWidget:Content.HtmlWidgetDefinition")'
 
 roles:
   'Neos.Neos:Administrator':
@@ -15,4 +21,10 @@ roles:
         permission: GRANT
       -
         privilegeTarget: 'CodeQ.HtmlWidget:EditWidgetDefinition'
+        permission: GRANT
+      -
+        privilegeTarget: 'CodeQ.HtmlWidget:RemoveWidgetDefinition'
+        permission: GRANT
+      -
+        privilegeTarget: 'CodeQ.HtmlWidget:EditWidgetDefinitionProperty'
         permission: GRANT
