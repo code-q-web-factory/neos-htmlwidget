@@ -20,7 +20,7 @@ All editors can add those HTML Widgets as content, similar to normal node types,
 
 ## Installation
 
-CodeQ.HtmlWidget is available via packagist. `"codeq/htmlwidget" : "~1.0"` to the require section of the composer.json
+CodeQ.HtmlWidget is available via packagist. `"codeq/htmlwidget" : "~1.3"` to the require section of the composer.json
 or run:
 
 ```bash
