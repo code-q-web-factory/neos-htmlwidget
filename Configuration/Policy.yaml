@@ -1,19 +1,81 @@
 # restrict creation and editing of `CodeQ.HtmlWidget:Content.HtmlWidgetDefinition` nodetype to non-admins
 privilegeTargets:
   'Neos\ContentRepository\Security\Authorization\Privilege\Node\CreateNodePrivilege':
+    'CodeQ.HtmlWidget:CreateWidget':
+      matcher: 'createdNodeIsOfType("CodeQ.HtmlWidget:Content.HtmlWidget")'
     'CodeQ.HtmlWidget:CreateWidgetDefinition':
       matcher: 'createdNodeIsOfType("CodeQ.HtmlWidget:Content.HtmlWidgetDefinition")'
   'Neos\ContentRepository\Security\Authorization\Privilege\Node\EditNodePrivilege':
+    'CodeQ.HtmlWidget:EditWidget':
+      matcher: 'nodeIsOfType("CodeQ.HtmlWidget:Content.HtmlWidget")'
     'CodeQ.HtmlWidget:EditWidgetDefinition':
       matcher: 'nodeIsOfType("CodeQ.HtmlWidget:Content.HtmlWidgetDefinition")'
   'Neos\ContentRepository\Security\Authorization\Privilege\Node\RemoveNodePrivilege':
+    'CodeQ.HtmlWidget:RemoveWidget':
+      matcher: 'nodeIsOfType("CodeQ.HtmlWidget:Content.HtmlWidget")'
     'CodeQ.HtmlWidget:RemoveWidgetDefinition':
       matcher: 'nodeIsOfType("CodeQ.HtmlWidget:Content.HtmlWidgetDefinition")'
   'Neos\ContentRepository\Security\Authorization\Privilege\Node\EditNodePropertyPrivilege':
+    'CodeQ.HtmlWidget:EditWidgetProperty':
+      matcher: 'nodeIsOfType("CodeQ.HtmlWidget:Content.HtmlWidget")'
     'CodeQ.HtmlWidget:EditWidgetDefinitionProperty':
       matcher: 'nodeIsOfType("CodeQ.HtmlWidget:Content.HtmlWidgetDefinition")'
 
 roles:
+  ##
+  # By default this role is abstract, feel free to use it however you want.
+  # This role is considered public API
+  ##
+  'CodeQ.HtmlWidget:HtmlWidgetEditor':
+    abstract: true
+    privileges:
+      -
+        privilegeTarget: 'CodeQ.HtmlWidget:CreateWidget'
+        permission: GRANT
+      -
+        privilegeTarget: 'CodeQ.HtmlWidget:EditWidget'
+        permission: GRANT
+      -
+        privilegeTarget: 'CodeQ.HtmlWidget:RemoveWidget'
+        permission: GRANT
+      -
+        privilegeTarget: 'CodeQ.HtmlWidget:EditWidgetProperty'
+        permission: GRANT
+
+  ##
+  # This role is considered public API
+  ##
+  'CodeQ.HtmlWidget:HtmlWidgetDefinitionEditor':
+    privileges:
+      -
+        privilegeTarget: 'CodeQ.HtmlWidget:CreateWidgetDefinition'
+        permission: GRANT
+      -
+        privilegeTarget: 'CodeQ.HtmlWidget:EditWidgetDefinition'
+        permission: GRANT
+      -
+        privilegeTarget: 'CodeQ.HtmlWidget:RemoveWidgetDefinition'
+        permission: GRANT
+      -
+        privilegeTarget: 'CodeQ.HtmlWidget:EditWidgetDefinitionProperty'
+        permission: GRANT
+
+  'Neos.Neos:AbstractEditor':
+    privileges:
+      -
+        privilegeTarget: 'CodeQ.HtmlWidget:CreateWidget'
+        permission: GRANT
+      -
+        privilegeTarget: 'CodeQ.HtmlWidget:EditWidget'
+        permission: GRANT
+      -
+        privilegeTarget: 'CodeQ.HtmlWidget:RemoveWidget'
+        permission: GRANT
+      -
+        privilegeTarget: 'CodeQ.HtmlWidget:EditWidgetProperty'
+        permission: GRANT
+
+
   'Neos.Neos:Administrator':
     privileges:
       -

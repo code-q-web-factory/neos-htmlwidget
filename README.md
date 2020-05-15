@@ -3,20 +3,21 @@
 
 # HTML Widget for Neos CMS
 
-This package allows Administrators to create resuable html widgets, which then can be included by all editors on the website.
+This package allows Administrators to create reusable HTML widgets. Editors can ruse them across on the website.
 
-Administrators and everyone with the privilegde `CodeQ.HtmlWidget:CreateWidgetDefinition` and `CodeQ.HtmlWidget:EditWidgetDefinition` can create HTML Widget Definitions including HTML, CSS and JavaScript. We recommend to create a separate, hidden Widget Definiton page for that.
+Administrators and everyone with the role `CodeQ.HtmlWidget:HtmlWidgetDefinitionEditor` can create HTML Widget Definitions including HTML, CSS and JavaScript.
 
-All editors can add those HTML Widgets as content, similar to normal node types, without being able to change the content.
+All editors can add those HTML Widgets as content NodeType without being able to change the content.
 
 ## Features
 
-*   Automatically blocks JavaScript code in the backend
-*   Restricts editing of HTML widget definitions, while allowing editors to use those widgets
+* Automatically removes JavaScript code in the backend, to not break the Neos Administration
+* Reference used media assets in your widget definition, so these assets can not be deleted.
+* Restricts editing of HTML widget definitions, while allowing editors to use those widgets
 
 [![HTML Widget Demo](https://img.youtube.com/vi/pOhYHlYH_6Q/0.jpg)](https://www.youtube.com/watch?v=pOhYHlYH_6Q)
 
-*The development and the public-releases of this package is generously sponsored [Code Q Web Factory](http://codeq.at).*
+*The development and the public-releases of this package are generously sponsored by [Code Q Web Factory](http://codeq.at).*
 
 ## Installation
 
@@ -28,6 +29,24 @@ composer require codeq/htmlwidget
 ```
 
 We use semantic-versioning so every breaking change will increase the major-version number.
+
+## Use Case 1: Administrators create widgets, which can be used by editors
+
+This is the default case and you just need to install the package. 
+
+If you are planning to create a whole widget library, we recommend creating a separate, hidden Widget Definition page for that.
+
+## Use Case 2: Developers can create HTML Widgets, no reuse planned
+
+If you want to create HTML widgets, but don't want to reuse them you only need the 
+`CodeQ.HtmlWidget:Content.HtmlWidgetDefinition`. Disable the reusing element in YAML:
+
+```yaml
+'CodeQ.HtmlWidget:Content.HtmlWidget':
+  abstract: true
+```
+
+If your Neos user has no admin privilege, add the role `HtmlWidgetDefinitionEditor`.
 
 ## License
 
