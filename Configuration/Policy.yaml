@@ -2,23 +2,31 @@
 privilegeTargets:
   'Neos\ContentRepository\Security\Authorization\Privilege\Node\CreateNodePrivilege':
     'CodeQ.HtmlWidget:CreateWidget':
+      label: 'Create a new html widget'
       matcher: 'createdNodeIsOfType("CodeQ.HtmlWidget:Content.HtmlWidget")'
     'CodeQ.HtmlWidget:CreateWidgetDefinition':
+      label: 'Create a new html widget definition'
       matcher: 'createdNodeIsOfType("CodeQ.HtmlWidget:Content.HtmlWidgetDefinition")'
   'Neos\ContentRepository\Security\Authorization\Privilege\Node\EditNodePrivilege':
     'CodeQ.HtmlWidget:EditWidget':
+      label: 'Edit a html widget'
       matcher: 'nodeIsOfType("CodeQ.HtmlWidget:Content.HtmlWidget")'
     'CodeQ.HtmlWidget:EditWidgetDefinition':
+      label: 'Edit a html widget definition'
       matcher: 'nodeIsOfType("CodeQ.HtmlWidget:Content.HtmlWidgetDefinition")'
   'Neos\ContentRepository\Security\Authorization\Privilege\Node\RemoveNodePrivilege':
     'CodeQ.HtmlWidget:RemoveWidget':
+      label: 'Remove a html widget'
       matcher: 'nodeIsOfType("CodeQ.HtmlWidget:Content.HtmlWidget")'
     'CodeQ.HtmlWidget:RemoveWidgetDefinition':
+      label: 'Remove a html widget definition'
       matcher: 'nodeIsOfType("CodeQ.HtmlWidget:Content.HtmlWidgetDefinition")'
   'Neos\ContentRepository\Security\Authorization\Privilege\Node\EditNodePropertyPrivilege':
     'CodeQ.HtmlWidget:EditWidgetProperty':
+      label: 'Edit a html widget property'
       matcher: 'nodeIsOfType("CodeQ.HtmlWidget:Content.HtmlWidget")'
     'CodeQ.HtmlWidget:EditWidgetDefinitionProperty':
+      label: 'Edit a html widget definition property'
       matcher: 'nodeIsOfType("CodeQ.HtmlWidget:Content.HtmlWidgetDefinition")'
 
 roles:
@@ -28,6 +36,8 @@ roles:
   ##
   'CodeQ.HtmlWidget:HtmlWidgetEditor':
     abstract: true
+    label: 'Html Widget Editor'
+    description: 'A user with this role is able to create, edit and delete html widgets.'
     privileges:
       -
         privilegeTarget: 'CodeQ.HtmlWidget:CreateWidget'
@@ -46,6 +56,8 @@ roles:
   # This role is considered public API
   ##
   'CodeQ.HtmlWidget:HtmlWidgetDefinitionEditor':
+    label: 'Html Widget Definition Editor'
+    description: 'A user with this role is able to create, edit and delete html widgets. You should trust this user to write valid and safe html.'
     privileges:
       -
         privilegeTarget: 'CodeQ.HtmlWidget:CreateWidgetDefinition'
