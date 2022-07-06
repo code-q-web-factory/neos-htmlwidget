@@ -7,17 +7,6 @@
     label: i18n
     icon: 'icon-gem'
     position: 950
-    creationDialog:
-      elements:
-        reference:
-          type: reference
-          ui:
-            label: i18n
-            editor: 'Neos.Neos/Inspector/Editors/ReferenceEditor'
-            editorOptions:
-              nodeTypes: ['CodeQ.HtmlWidget:Content.HtmlWidgetDefinition']
-          validation:
-            'Neos.Neos/Validation/NotEmptyValidator': []
   options:
     template:
       properties:
@@ -28,7 +17,10 @@
       ui:
         label: i18n
         reloadIfChanged: true
+        showInCreationDialog: true
         inspector:
           group: htmlwidget
           editorOptions:
             nodeTypes: ['CodeQ.HtmlWidget:Content.HtmlWidgetDefinition']
+          validation:
+            'Neos.Neos/Validation/NotEmptyValidator': []            
