@@ -19,4 +19,5 @@ prototype(CodeQ.HtmlWidget:Content.HtmlWidget) < prototype(Neos.Neos:ContentComp
 				</div>
 			`
 		}
+	}
 }
