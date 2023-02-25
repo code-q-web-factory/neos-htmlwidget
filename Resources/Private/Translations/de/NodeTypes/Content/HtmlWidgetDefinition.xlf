@@ -47,8 +47,8 @@
                 <target xml:lang="de" state="translated">Verwendete Medien-Dateien</target>
             </trans-unit>
             <trans-unit id="properties.assets.ui.help.message" xml:space="preserve">
-                <source>If you are use dynamic assets in your HTML, you can prevent those assets from being deleted by linking them here. This will have no effect on the widget itself, the references here are never actually used. But it prevents that these media assets can be deleted.</source>
-                <target xml:lang="de" state="translated">Wenn Sie dynamische Elemente in Ihrem HTML-Code verwenden, können Sie verhindern, dass diese Elemente gelöscht werden, indem Sie sie hier verlinken. Dies hat keine Auswirkung auf das Widget selbst, da die Verweise hier nie tatsächlich verwendet werden. Es verhindert aber dass diese Medien gelöscht werden können.</target>
+                <source>You can link any used media assets. This will have no effect on the HTML itself, but it prevents that these media assets can be deleted and shows the correct usage information in the media browser.</source>
+                <target xml:lang="de" state="translated">Du kannst beliebige Medieninhalte verlinken. Dies hat keine Auswirkung auf das HTML, es verhindert jedoch, dass diese Medienelemente gelöscht werden können und zeigt die korrekten Nutzungsinformationen im Medienbrowser an.</target>
             </trans-unit>
         </body>
  </file>
