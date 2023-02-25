@@ -22,5 +22,5 @@
           group: htmlwidget
           editorOptions:
             nodeTypes: ['CodeQ.HtmlWidget:Content.HtmlWidgetDefinition']
-          validation:
-            'Neos.Neos/Validation/NotEmptyValidator': []            
+      validation:
+        'Neos.Neos/Validation/NotEmptyValidator': []

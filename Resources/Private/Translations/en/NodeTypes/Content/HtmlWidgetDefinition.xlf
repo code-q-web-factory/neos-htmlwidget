@@ -3,13 +3,16 @@
     <file original="" source-language="en" datatype="plaintext">
         <body>
             <trans-unit id="ui.label" xml:space="preserve">
-                <source>HTML Widget Definition</source>
+                <source>HTML Widget</source>
             </trans-unit>
             <trans-unit id="creationDialog.title" xml:space="preserve">
                 <source>Name</source>
             </trans-unit>
             <trans-unit id="properties.title" xml:space="preserve">
                 <source>Widget name</source>
+            </trans-unit>
+            <trans-unit id="properties.title.ui.help.message" xml:space="preserve">
+                <source>The widget can be reused as reference, and found by this name.</source>
             </trans-unit>
             <trans-unit id="properties.html" xml:space="preserve">
                 <source>HTML Content</source>
@@ -28,6 +31,12 @@
             </trans-unit>
             <trans-unit id="properties.js.codeEditor.buttonLabel" xml:space="preserve">
                 <source>Edit JavaScript</source>
+            </trans-unit>
+            <trans-unit id="properties.assets" xml:space="preserve">
+                <source>Media assets used</source>
+            </trans-unit>
+            <trans-unit id="properties.assets.ui.help.message" xml:space="preserve">
+                <source>If you are use dynamic assets in your HTML, you can prevent those assets from being deleted by linking them here. This will have no effect on the widget itself, the references here are never actually used. But it prevents that these media assets can be deleted.</source>
             </trans-unit>
         </body>
     </file>

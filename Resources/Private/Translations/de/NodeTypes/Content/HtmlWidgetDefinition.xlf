@@ -3,8 +3,8 @@
     <file original="" source-language="en" datatype="plaintext" target-language="de">
         <body>
             <trans-unit id="ui.label" xml:space="preserve">
-                <source>HTML Widget Definition</source>
-                <target xml:lang="de" state="translated">HTML-Widget Definition</target>
+                <source>HTML Widget</source>
+                <target xml:lang="de" state="translated">HTML-Widget</target>
             </trans-unit>
             <trans-unit id="creationDialog.title" xml:space="preserve">
                 <source>Name</source>
@@ -13,6 +13,10 @@
             <trans-unit id="properties.title" xml:space="preserve">
                 <source>Widget name</source>
                 <target xml:lang="de" state="translated">Widget Name</target>
+            </trans-unit>
+            <trans-unit id="properties.title.ui.help.message" xml:space="preserve">
+                <source>The widget can be reused as reference, and found by this name.</source>
+                <target xml:lang="de" state="translated">Das Widget kann mit diesem Namen als Referenz gefunden und wiederverwendet werden.</target>
             </trans-unit>
             <trans-unit id="properties.html" xml:space="preserve">
                 <source>HTML Content</source>
@@ -37,6 +41,14 @@
             <trans-unit id="properties.js.codeEditor.buttonLabel" xml:space="preserve">
                 <source>Edit JavaScript</source>
                 <target xml:lang="de" state="translated">JavaScript bearbeiten</target>
+            </trans-unit>
+            <trans-unit id="properties.assets" xml:space="preserve">
+                <source>Media assets used</source>
+                <target xml:lang="de" state="translated">Verwendete Medien-Dateien</target>
+            </trans-unit>
+            <trans-unit id="properties.assets.ui.help.message" xml:space="preserve">
+                <source>If you are use dynamic assets in your HTML, you can prevent those assets from being deleted by linking them here. This will have no effect on the widget itself, the references here are never actually used. But it prevents that these media assets can be deleted.</source>
+                <target xml:lang="de" state="translated">Wenn Sie dynamische Elemente in Ihrem HTML-Code verwenden, können Sie verhindern, dass diese Elemente gelöscht werden, indem Sie sie hier verlinken. Dies hat keine Auswirkung auf das Widget selbst, da die Verweise hier nie tatsächlich verwendet werden. Es verhindert aber dass diese Medien gelöscht werden können.</target>
             </trans-unit>
         </body>
  </file>
