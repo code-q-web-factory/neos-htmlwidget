@@ -3,7 +3,7 @@
 
 # HTML Widget for Neos CMS
 
-## For new projects we recommend to use [CodeQ.HtmlContent](https://github.com/code-q-web-factory/CodeQ.HtmlContent), this will still be maintianed.
+## For new projects we recommend to use [CodeQ.HtmlContent](https://github.com/code-q-web-factory/CodeQ.HtmlContent), CodeQ.HtmlWiget will still be maintained.
 
 This package allows developers to create HTML widgets in the administration. Editors can reuse them across on the website.
 
