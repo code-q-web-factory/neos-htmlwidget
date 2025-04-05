@@ -8,11 +8,11 @@ prototype(CodeQ.HtmlWidget:Content.HtmlWidget) < prototype(Neos.Neos:ContentComp
 				html = ${q(reference).property('html')}
 				css = ${q(reference).property('css')}
 				js = ${q(reference).property('js')}
-				renderJavaScript = ${!node.context.inBackend}
+				renderJavaScript = ${!(renderingMode ? renderingMode.isEdit : node.context.inBackend)}
 			}
 		}
 		isEmtpy {
-			condition = ${node.context.inBackend}
+			condition = ${renderingMode ? renderingMode.isEdit : node.context.inBackend}
 			renderer = afx`
 				<div style="display: block; padding: 1rem; background: red;">
 					{I18n.translate('CodeQ.HtmlWidget:NodeTypes.Content.HtmlWidget:emptyText')}

@@ -5,7 +5,7 @@
     'CodeQ.HtmlWidget:Mixin.Inspector': true
   ui:
     label: i18n
-    icon: 'icon-gem'
+    icon: icon-gem
     position: 950
   options:
     template:
@@ -21,6 +21,7 @@
         inspector:
           group: htmlwidget
           editorOptions:
-            nodeTypes: ['CodeQ.HtmlWidget:Content.HtmlWidgetDefinition']
+            nodeTypes:
+              - 'CodeQ.HtmlWidget:Content.HtmlWidgetDefinition'
       validation:
-        'Neos.Neos/Validation/NotEmptyValidator': []
+        Neos.Neos/Validation/NotEmptyValidator: {  }

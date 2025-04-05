@@ -3,6 +3,6 @@ prototype(CodeQ.HtmlWidget:Content.HtmlWidgetDefinition) < prototype(Neos.Neos:C
 		html = ${q(node).property('html')}
 		css = ${q(node).property('css')}
 		js = ${q(node).property('js')}
-		renderJavaScript = ${!node.context.inBackend}
+		renderJavaScript = ${!(renderingMode ? renderingMode.isEdit : node.context.inBackend)}
 	}
 }

@@ -4,7 +4,7 @@
     'CodeQ.HtmlWidget:Mixin.Inspector': true
   ui:
     label: i18n
-    icon: 'icon-code'
+    icon: icon-code
     position: 900
   properties:
     title:
@@ -15,9 +15,9 @@
           message: i18n
         showInCreationDialog: true
         inspector:
-          group: 'htmlwidget'
+          group: htmlwidget
       validation:
-        'Neos.Neos/Validation/NotEmptyValidator': []
+        Neos.Neos/Validation/NotEmptyValidator: {  }
     html:
       type: string
       ui:
@@ -25,11 +25,11 @@
         reloadIfChanged: true
         showInCreationDialog: true
         inspector:
-          group: 'htmlwidget'
-          editor: 'Neos.Neos/Inspector/Editors/CodeEditor'
+          group: htmlwidget
+          editor: Neos.Neos/Inspector/Editors/CodeEditor
           editorOptions:
             buttonLabel: i18n
-            highlightingMode: 'text/html'
+            highlightingMode: text/html
     css:
       type: string
       ui:
@@ -37,11 +37,11 @@
         reloadIfChanged: true
         showInCreationDialog: true
         inspector:
-          group: 'htmlwidget'
-          editor: 'Neos.Neos/Inspector/Editors/CodeEditor'
+          group: htmlwidget
+          editor: Neos.Neos/Inspector/Editors/CodeEditor
           editorOptions:
             buttonLabel: i18n
-            highlightingMode: 'text/css'
+            highlightingMode: text/css
     js:
       type: string
       ui:
@@ -49,13 +49,13 @@
         reloadIfChanged: true
         showInCreationDialog: true
         inspector:
-          group: 'htmlwidget'
-          editor: 'Neos.Neos/Inspector/Editors/CodeEditor'
+          group: htmlwidget
+          editor: Neos.Neos/Inspector/Editors/CodeEditor
           editorOptions:
             buttonLabel: i18n
-            highlightingMode: 'text/javascript'
+            highlightingMode: text/javascript
     assets:
-      type: 'array<Neos\Media\Domain\Model\Asset>'
+      type: array<Neos\Media\Domain\Model\Asset>
       ui:
         label: i18n
         help:
@@ -63,4 +63,4 @@
         reloadIfChanged: false
         showInCreationDialog: true
         inspector:
-          group: 'htmlwidget'
+          group: htmlwidget

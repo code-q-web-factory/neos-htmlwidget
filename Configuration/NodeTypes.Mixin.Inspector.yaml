@@ -5,5 +5,5 @@
       groups:
         htmlwidget:
           label: i18n
-          icon: 'icon-cogs'
+          icon: icon-cogs
           position: 10
