@@ -1,9 +1,9 @@
+## DEPRECATED in favor of [NEOSidekick.HtmlContent](https://github.com/NEOSidekick/NEOSidekick.HtmlContent)
+
 [![Latest Stable Version](https://poser.pugx.org/codeq/htmlwidget/v/stable)](https://packagist.org/packages/codeq/htmlwidget)
 [![License](https://poser.pugx.org/codeq/htmlwidget/license)](LICENSE)
 
 # HTML Widget for Neos CMS
-
-## For new projects we recommend to use [CodeQ.HtmlContent](https://github.com/code-q-web-factory/CodeQ.HtmlContent), CodeQ.HtmlWiget will still be maintained.
 
 This package allows developers to create HTML widgets in the administration. Editors can reuse them across on the website.
 
